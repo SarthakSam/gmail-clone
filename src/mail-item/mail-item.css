@@ -3,6 +3,20 @@
   border: 0.5px solid rgba(225, 225, 225, 0.6);
 }
 
+.mail-group-item:hover {
+  box-shadow: 0 5px 10px rgba(158, 160, 160, 0.9);
+}
+
+.mail-action {
+  position: absolute;
+  right: 10px;
+  display: none;
+}
+
+.mail-group-item:hover .mail-action {
+  display: block;
+}
+
 .mail-group-item__starred {
   width: 5px;
   padding: 10px;

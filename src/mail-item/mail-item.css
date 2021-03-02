@@ -1,6 +1,25 @@
-.mailItem {
+.mail-group-item {
   background-color: rgba(242, 245, 245, 0.8);
-  border: 1px solid rgba(225, 225, 225, 0.8);
-  padding: 0.4rem;
-  display: flex;
+  border: 0.5px solid rgba(225, 225, 225, 0.6);
+}
+
+.mail-group-item__starred {
+  width: 5px;
+  padding: 10px;
+}
+
+.mail-group-item__sentBy {
+  width: 20%;
+  min-width: fit-content;
+  padding: 10px;
+}
+
+.mail-group-item__description {
+  padding: 10px;
+}
+
+.mail-group-item__date {
+  width: 10%;
+  min-width: 70px;
+  padding: 10px;
 }

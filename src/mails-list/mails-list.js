@@ -3,10 +3,12 @@ import "./mails-list.css";
 
 export default function MailsList({ mails }) {
   return (
-    <ul className="mailsList">
-      {mails.map((mail) => (
-        <MailItem mail={mail} />
-      ))}
-    </ul>
+    <table style={{ flex: 1 }}>
+      <tbody className="mails-list">
+        {mails.map((mail) => (
+          <MailItem mail={mail} key={mail.id} />
+        ))}
+      </tbody>
+    </table>
   );
 }

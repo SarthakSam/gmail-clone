@@ -1,12 +1,21 @@
 import "./mail-item.css";
+// import { FaStar } from 'react-icons/fa';
+import { FiStar } from "react-icons/fi";
 
 export default function MailItem({ mail }) {
   return (
-    <li className="mailItem">
-      <strong>{mail.from.username}</strong>
-      <p>
+    <tr className="mail-group-item">
+      <td className="mail-group-item__starred">
+        {" "}
+        <FiStar />{" "}
+      </td>
+      <td className="mail-group-item__sentBy">
+        <strong> {mail.from.username}</strong>
+      </td>
+      <td className="mail-group-item__description">
         <strong>{mail.title}</strong> - {mail.description}
-      </p>
-    </li>
+      </td>
+      <td className="mail-group-item__date">{mail.sentOn}</td>
+    </tr>
   );
 }

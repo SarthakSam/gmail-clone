@@ -1,8 +1,9 @@
 import Label from "./label/label.js";
+import { HiInbox } from "react-icons/hi";
 
-export default function Labels() {
+export default function Labels({ activeTab, tabChanged }) {
   const list = [
-    { title: "Inbox", icon: null },
+    { title: "Inbox", icon: HiInbox },
     { title: "Starred", icon: null },
     { title: "Snoozed", icon: null },
     { title: "Important", icon: null },
@@ -13,10 +14,20 @@ export default function Labels() {
     { title: "Trash", icon: null },
     { title: "Create new label", icon: null }
   ];
+
+  function labelChanged(name) {
+    if (name !== activeTab) tabChanged(name);
+  }
+
   return (
     <ul style={{ padding: 0, margin: 0 }}>
       {list.map((label) => (
-        <Label key={label.title} {...label} />
+        <Label
+          key={label.title}
+          {...label}
+          isActive={activeTab === label.title}
+          onClickHandler={labelChanged.bind(null, label.title)}
+        />
       ))}
     </ul>
   );

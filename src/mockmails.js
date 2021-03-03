@@ -8,7 +8,10 @@ export let mails = [
       id: "sarthak242@gmail.com",
       username: "Sarthak"
     },
-    sentOn: "Feb 24"
+    sentOn: "Feb 24",
+    deleted: false,
+    archived: false,
+    labels: ["Starred", "Label1"]
   },
   {
     id: 2,
@@ -19,7 +22,10 @@ export let mails = [
       id: "sarthak242@gmail.com",
       username: "Sarthak"
     },
-    sentOn: "Feb 24"
+    sentOn: "Feb 24",
+    deleted: false,
+    archived: false,
+    labels: ["Label2"]
   },
   {
     id: 3,
@@ -30,7 +36,10 @@ export let mails = [
       id: "sarthak242@gmail.com",
       username: "Sarthak"
     },
-    sentOn: "Feb 24"
+    sentOn: "Feb 20",
+    deleted: false,
+    archived: false,
+    labels: []
   },
   {
     id: 4,
@@ -41,6 +50,9 @@ export let mails = [
       id: "sarthak242@gmail.com",
       username: "Sarthak"
     },
-    sentOn: "Feb 24"
+    sentOn: "Feb 24",
+    deleted: true,
+    archived: false,
+    labels: []
   }
 ];

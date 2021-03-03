@@ -3,7 +3,7 @@ import { FaTrash } from "react-icons/fa";
 import { HiMailOpen } from "react-icons/hi";
 import { BsClockFill } from "react-icons/bs";
 
-import "./mail-actions-buttons.css";
+import "./mail-action-buttons.css";
 
 export default function MailActionButtons() {
   return (
